@@ -24,33 +24,40 @@
 }
 
 body {
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   font-family: var(--ff-primary);
   font-size: 18px;
-  background-color: var(--white);
+  background-color: #f2f2f2;
+  line-height: 1;
 }
 
 /* Font Ulitily Classes */
 
 .sm-text {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: var(--fw-400);
 }
 
 .med-text {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
+  font-weight: var(--fw-500);
+}
+
+.large-text {
+  font-size: 2.4rem;
   font-weight: var(--fw-500);
 }
 
 .xl-text {
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   font-weight: var(--fw-500);
 }
 
 .xxl-text {
-  font-size: 2.875rem;
+  font-size: 4rem;
   font-weight: var(--fw-500);
 }
 
@@ -63,17 +70,18 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 200%;
   object-fit: contain;
   display: block;
 }
 
 .grid-container {
   width: 100%;
-  max-width: 1400px;
-  margin: 2rem auto;
+  max-width: 1200px;
+  margin: 1rem auto;
   display: grid;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "item7 item1 item1 item4"
@@ -107,25 +115,174 @@ img {
   grid-area: item8;
 }
 
-.item-1-container{
+.item-1-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: var(--purple500);
+  color: white;
+  padding: 60px 15px;
+  border-radius: 8px;
+  height: 100%;
 }
 
+.item-1-p {
+  color: var(--yellow100);
+}
+
+.img-item-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.item-2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  padding-left: 17px;
+  height: 100%;
+}
+
+.img-item-2 {
+  width: 120%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(194, 191, 191, 0.1);
+  border-radius: 26px;
+}
+
+.item-3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--yellow500);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  padding: 20px 20px;
+}
+
+.img-item-3 {
+  width: 85%;
+  position: absolute;
+  bottom: -4.5rem;
+}
+
+.item-4-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--purple100);
+  border-radius: 8px;
+  padding: 40px 30px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-item-4 {
+  margin-left: 5px;
+  width: 180%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.item-4-text {
+  font-size: 1.25rem;
+}
+
+.item-5-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple500);
+  border-radius: 8px;
+  padding: 20px 20px;
+  height: 100%;
+  color: var(--white);
+}
+
+.item-5 p {
+  font-size: 2.5rem;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.img-item-5 {
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+.item-6-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 30px 25px;
+  height: 100%;
+}
+
+.item-6-percentage {
+  font-size: 3rem;
+  font-weight: var(--fw-500);
+  margin-bottom: 12px;
+}
+
+.item-6-text {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.img-item-6 {
+  margin-top: 20px;
+  width: 80%;
+}
 
 .item-7-container {
   display: flex;
   flex-direction: column;
-  padding: 140px 40px 140px 40px;
+  justify-content: center;
+  padding: 50px 35px;
   background-color: var(--yellow100);
-  border-radius: 10px;
-  line-height: 1;
+  border-radius: 8px;
+  letter-spacing: -1px;
+  height: 100%;
+}
+
+.item-7-container p {
   letter-spacing: -2px;
+  margin-bottom: 20px;
 }
 
 .img-item-7 {
-  margin-top: 20px;
-  width: 80%;
+  width: 90%;
+  margin-left: 10px;
+}
+
+.item-8-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--yellow500);
+  border-radius: 8px;
+  padding: 20px 25px;
+  height: 100%;
+}
+
+.item-8-container p {
+  max-width: 70%;
+  line-height: 1;
+  margin-bottom: 1.8rem;
+}
+
+.img-item-8 {
+  margin-top: 40px;
+  width: 100%;
+  margin-left: 4px;
 }
