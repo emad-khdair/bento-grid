@@ -1,0 +1,123 @@
+/* Reset Styles */
+
+::before,
+::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Root Styles */
+
+:root {
+  --ff-primary: "DM Sans";
+  --fw-400: 400;
+  --fw-500: 500;
+
+  --purple100: #dacffc;
+  --purple500: #7650dc;
+  --yellow100: #f9eee1;
+  --yellow500: #ffcb6b;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  background-color: var(--white);
+}
+
+/* Font Ulitily Classes */
+
+.sm-text {
+  font-size: 0.875rem;
+  font-weight: var(--fw-400);
+}
+
+.med-text {
+  font-size: 2.6rem;
+  font-weight: var(--fw-500);
+}
+
+.xl-text {
+  font-size: 1.625rem;
+  font-weight: var(--fw-500);
+}
+
+.xxl-text {
+  font-size: 2.875rem;
+  font-weight: var(--fw-500);
+}
+
+.quicker {
+  color: var(--purple500);
+}
+
+.social {
+  color: var(--yellow500);
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "item7 item1 item1 item4"
+    "item7 item2 item3 item4"
+    "item8 item2 item3 item4"
+    "item8 item6 item5 item5";
+}
+
+.item-1 {
+  grid-area: item1;
+}
+.item-2 {
+  grid-area: item2;
+}
+.item-3 {
+  grid-area: item3;
+}
+.item-4 {
+  grid-area: item4;
+}
+.item-5 {
+  grid-area: item5;
+}
+.item-6 {
+  grid-area: item6;
+}
+.item-7 {
+  grid-area: item7;
+}
+.item-8 {
+  grid-area: item8;
+}
+
+.item-7-container {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 40px 140px 40px;
+  background-color: var(--yellow100);
+  border-radius: 10px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.img-item-7 {
+  margin-top: 20px;
+  width: 80%;
+}
