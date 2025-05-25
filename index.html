@@ -1,42 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bento grid</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Social Media 10x Faster with AI
-  Over 4,000 5-star reviews
-
-  Manage multiple accounts and platforms.
-
-  Maintain a consistent posting schedule.
-
-  Schedule to social media.
-  Optimize post timings to publish content at the perfect time for your audience.
-  
-  Grow followers with non-stop content.
-
-  >56% faster audience growth
-  
-  Create and schedule content quicker.
-
-  Write your content using AI.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bento Grid</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="template-grid item-1">
+        <div class="item-1-container xxl-text">
+          <p>
+            Social Media <span class="social">10x</span> <em>Faster</em> with Ai
+          </p>
+          <img
+            class="img-item-1"
+            src="/assets/images/illustration-five-stars.webp"
+            alt="five stars"
+          />
+        </div>
+      </div>
+      <div class="template-grid item-2 med-text">
+        <div class="item-2-container">
+          <img
+            class="img-item-2"
+            src="/assets/images/illustration-multiple-platforms.webp"
+            alt="multiple platforms"
+          />
+          <p>Manage multiple accounts and platforms.</p>
+        </div>
+      </div>
+      <div class="template-grid item-3">
+        <div class="item-3-container med-text">
+          <p>Maintain a consistent posting schedule.</p>
+          <img
+            class="img-item-3"
+            src="/assets/images/illustration-consistent-schedule.webp"
+            alt="consisten schedule"
+          />
+        </div>
+      </div>
+      <div class="template-grid item-4">
+        <div class="item-4-container">
+          <p class="med-text">Schedule to social media.</p>
+          <img
+            class="img-item-4"
+            src="/assets/images/illustration-schedule-posts.webp"
+            alt="posts"
+          />
+          <p class="sm-text">
+            Optimize post timings to publish content at the perfect time for
+            your audience.
+          </p>
+        </div>
+      </div>
+      <div class="template-grid item-5">
+        <div class="item-5-container xl-text">
+          <img
+            class="img-item-5"
+            src="/assets/images/illustration-grow-followers.webp"
+            alt="grow followers"
+          />
+          <p>Grow followers with non-stop content.</p>
+        </div>
+      </div>
+      <div class="template-grid item-6">
+        <div class="item-6-container">
+          <p class="xl-text">>56%</p>
+          <p class="sm-text">faster audience growth</p>
+          <img
+            class="img-item-6"
+            src="/assets/images/illustration-audience-growth.webp"
+            alt="auidence growth"
+          />
+        </div>
+      </div>
+      <div class="template-grid item-7 med-text">
+        <div class="item-7-container">
+          <p>
+            Create and schedule content
+            <span class="quicker"><em>quicker.</em></span>
+          </p>
+          <img
+            class="img-item-7"
+            src="/assets/images/illustration-create-post.webp"
+            alt="create post"
+          />
+        </div>
+      </div>
+      <div class="template-grid item-8 med-text">
+        <div class="item-8-container">
+          <p>Write your content using AI.</p>
+          <img
+            class="img-item-8"
+            src="/assets/images/illustration-ai-content.webp"
+            alt="ai content"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
