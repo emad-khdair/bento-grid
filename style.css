@@ -107,6 +107,14 @@ img {
   grid-area: item8;
 }
 
+.item-1-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
 .item-7-container {
   display: flex;
   flex-direction: column;
